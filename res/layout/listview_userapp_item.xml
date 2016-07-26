@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@drawable/selector_listview_app_item_background"
+    android:padding="3dp"
+    android:orientation="horizontal" >
+    
+    <ImageView 
+        android:id="@+id/iv_listview_userapp_icon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/ic_launcher"/>
+
+    <LinearLayout 
+        android:layout_weight="5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical">
+        
+        <TextView 
+            android:id="@+id/tv_listview_userapp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:text="手机助手"/>
+        <TextView 
+            android:id="@+id/tv_listview_userapp_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#7B7B7B"
+            android:text="sdfsdfsfsdfsdfsd"/>
+        <TextView 
+            android:id="@+id/tv_listview_userapp_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#7B7B7B"
+            android:text="sdfsdfsfsdfsdfsd"/>
+    </LinearLayout>
+</LinearLayout>

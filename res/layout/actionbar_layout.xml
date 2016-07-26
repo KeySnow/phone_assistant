@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_layout_height"
+    android:background="@color/actionbar_layout_background"
+    >
+    
+    <ImageView 
+        android:id="@+id/actionbat_back"
+        android:layout_width="@dimen/actionbar_btn_width"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/actionbar_btn_margin"
+        android:background="@drawable/selector_my_actionbar_item_background"
+        android:clickable="true"
+        android:src="@drawable/btn_homeasup_default"/>
+    <ImageView 
+        android:id="@+id/actionbat_child"
+        android:layout_width="@dimen/actionbar_btn_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/actionbar_btn_margin"
+        android:background="@drawable/selector_my_actionbar_item_background"
+        android:clickable="true"
+        android:src="@drawable/ic_child_configs"/>
+    
+    <TextView 
+        android:id="@+id/actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/actionbar_title"
+        android:textSize="@dimen/actionbar_title_textSize"
+        android:textColor="@color/actionbar_title_textColot"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

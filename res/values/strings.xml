@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">手机助手</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tv_enter_text">直接进入</string>
+    <string name="actionbar_title">手机助手</string>
+    <string name="home_content_percent_number">70</string>
+    <string name="home_content_percent">%</string>
+
+</resources>

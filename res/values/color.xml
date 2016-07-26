@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="actionbar_layout_background">#e1e1e1</color>
+    <color name="actionbar_title_textColot">#f00</color>
+    <color name="home_content_percent_number_textColor">#f00</color>
+</resources>

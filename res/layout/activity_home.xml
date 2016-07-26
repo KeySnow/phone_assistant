@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.view.MyActionbar
+        android:id="@+id/ma_activity_home_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.example.view.MyCircleView
+            android:id="@+id/mcv_activity_home_my_circle"
+            android:layout_width="215dp"
+            android:layout_height="215dp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/iv_activity_home_clean"
+            android:layout_width="@dimen/home_content_big_btn"
+            android:layout_height="@dimen/home_content_big_btn"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:onClick="clean"
+            android:src="@drawable/selector_big_btn" />
+
+        <TextView
+            android:id="@+id/tv_activity_home_percent_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/home_content_percent_number"
+            android:textColor="@color/home_content_percent_number_textColor"
+            android:textSize="@dimen/home_content_percent_number_textSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_activity_home_percent_number"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/tv_activity_home_percent_number"
+            android:text="@string/home_content_percent"
+            android:textSize="@dimen/home_content_percent_textSize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_activity_home_run"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_activity_home_item_background"
+                android:clickable="true"
+                android:drawableTop="@drawable/setting_info_icon_space"
+                android:gravity="center"
+                android:onClick="run"
+                android:text="查看进程" />
+
+            <TextView
+                android:id="@+id/tv_activity_home_phoneinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_activity_home_item_background"
+                android:clickable="true"
+                android:drawableTop="@drawable/setting_info_icon_root"
+                android:gravity="center"
+                android:text="关于手机" />
+
+            <TextView
+                android:id="@+id/tv_activity_home_storeinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_activity_home_item_background"
+                android:clickable="true"
+                android:drawableTop="@drawable/icon_rocket"
+                android:gravity="center"
+                android:text="存储情况" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_activity_home_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_activity_home_item_background"
+                android:clickable="true"
+                android:drawableTop="@drawable/icon_phonemgr"
+                android:gravity="center"
+                android:text="联系人" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_activity_home_item_background"
+                android:clickable="true"
+                android:drawableTop="@drawable/icon_rocket"
+                android:gravity="center"
+                android:text="widget" />
+
+            <TextView
+                android:id="@+id/tv_activity_home_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_activity_home_item_background"
+                android:clickable="true"
+                android:drawableTop="@drawable/icon_rocket"
+                android:gravity="center"
+                android:text="手机防盗" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
